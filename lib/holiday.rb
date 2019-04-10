@@ -95,6 +95,7 @@ def all_holidays_with_bbq(holiday_hash)
       puts holiday.to_s.split("_").collect {|item| item.capitalize!}
     end
   end
+end
 
 end
 all_holidays_with_bbq(holiday_hash)
