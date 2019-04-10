@@ -89,14 +89,7 @@ end
 
 
 def all_holidays_with_bbq(holiday_hash)
-  holiday_hash.map do |season, holiday|
-    holiday.map do |holiday, item|
-      holiday if item.include?("BBQ")
-    bbq = holiday.to_s.split("_").collect {|item| item.capitalize!}
-    puts "#{bbq}"
-    end
-  end
-end
+
 
 
 all_holidays_with_bbq(holiday_hash)
